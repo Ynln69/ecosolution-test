@@ -1,38 +1,24 @@
-import React, { useState, useEffect } from "react";
-import { HeaderContainer, BtnBox, BtnMenu, BtnGet } from "./Header.styled";
-
-import { ReactComponent as LogoIcon } from "../../images/logo.svg";
-import { ReactComponent as MenuIcon } from "../../images/menu.svg";
-import { ReactComponent as Circle } from "../../images/circleArrow.svg";
+import useWindowSize from "hooks/useWindowSize";
+import { HeaderContainer, BtnBox, BtnMenu } from "./Header.styled";
+import sprite from "../../images/sprite.svg";
+import Button from "components/Button/Button";
 
 const Header = () => {
-  const [showButton, setShowButton] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setShowButton(window.innerWidth >= 768);
-    };
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
+  const { width } = useWindowSize();
   return (
     <HeaderContainer>
       <a href="https://Ynln69.github.io/ecosolution-test/">
-        <LogoIcon width="269" height="40" />
+        <svg width={269} height={40}>
+          <use xlinkHref={`${sprite}#icon-logo`}></use>
+        </svg>
       </a>
       <BtnBox>
         <BtnMenu>
-          <MenuIcon width="16" height="16" />
+          <svg width={16} height={16}>
+            <use xlinkHref={`${sprite}#icon-menu`}></use>
+          </svg>
         </BtnMenu>
-        {showButton && (
-          <BtnGet>
-            Get in touch <Circle width="16" height="16" />{" "}
-          </BtnGet>
-        )}
+        {width >= 768 && <Button title="Get in touch" />}
       </BtnBox>
     </HeaderContainer>
   );

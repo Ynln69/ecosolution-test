@@ -1,15 +1,15 @@
-import { ContactsTitle } from "./Contacts.styled";
+import { ContactsTitle, ContactContainer } from "./Contacts.styled";
 import ContactsForm from "./ContactsForm";
 import ContactsList from "./ContactsList";
 
 const Contacts = () => {
   return (
-    <section>
+    <section id="contacts">
       <ContactsTitle>Contact us</ContactsTitle>
-      <div>
+      <ContactContainer>
         <ContactsList />
         <ContactsForm />
-      </div>
+      </ContactContainer>
     </section>
   );
 };

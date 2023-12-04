@@ -11,6 +11,7 @@ export const Btn = styled.button`
 
   color: #173d33;
   background-color: #97d28b;
+  stroke: #173d33;
   font-size: 16px;
   font-weight: 400;
   line-height: normal;

@@ -3,16 +3,28 @@ import { SecondaryButton } from "components/SecondaryBtn/SecondaryBtn.styled";
 import { MainTitle } from "components/Title/Title.stylde";
 
 export const ContactsTitle = styled(MainTitle)`
-  margin-right: auto;
-  margin-left: auto;
+  width: 168px;
+  margin: 0 auto;
   margin-bottom: 24px;
   @media (min-width: 768px) {
-    width: 168px;
     margin-bottom: 40px;
   }
   @media (min-width: 1280px) {
     width: 224px;
     margin-bottom: 120px;
+  }
+`;
+
+export const ContactContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
   }
 `;
 

@@ -12,6 +12,12 @@ export const CasesContent = styled.div`
 export const CasesTitle = styled(MainTitle)`
   position: relative;
   margin-bottom: 24px;
+  @media (min-width: 768px) {
+    width: 264px;
+  }
+  @media (min-width: 1280px) {
+    width: 398px;
+  }
   &::after {
     @media (min-width: 768px) {
       position: absolute;
@@ -55,4 +61,5 @@ export const CasesButton = styled.button`
   border: 1px solid #173d33;
 
   background: transparent;
+  stroke: #173d33;
 `;

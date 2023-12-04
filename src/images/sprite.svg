@@ -19,23 +19,21 @@
 <path fill="#97d28b" style="fill: var(--color2, #97d28b)" d="M24.048 15.813c0.261-0.275 0.462-0.599 0.591-0.954s0.181-0.731 0.155-1.107c-0.026-0.376-0.13-0.742-0.306-1.076s-0.42-0.629-0.716-0.866c-0.297-0.237-0.64-0.411-1.007-0.512s-0.753-0.125-1.131-0.072c-0.378 0.053-0.741 0.182-1.066 0.379s-0.606 0.458-0.824 0.767c-0.092 0.096-7.010 8.504-7.086 8.612-0.261 0.275-0.462 0.599-0.59 0.954s-0.181 0.731-0.155 1.107c0.026 0.376 0.13 0.742 0.306 1.076s0.42 0.629 0.716 0.866c0.297 0.237 0.64 0.411 1.007 0.512s0.753 0.125 1.131 0.072c0.378-0.053 0.741-0.182 1.066-0.379s0.606-0.458 0.824-0.767c0.092-0.096 7.010-8.504 7.086-8.612z"></path>
 </symbol>
 <symbol id="icon-close" viewBox="0 0 32 32">
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4" d="M9.334 9.333l13.333 13.333M9.334 22.667l13.333-13.333"></path>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none">
+  <path d="M5.83325 5.83325L14.1666 14.1666M5.83325 14.1666L14.1666 5.83325" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</symbol>
+<symbol id="icon-arrow-left" viewBox="0 0 32 32">
+<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 36 36" fill="none">
+  <path d="M14.3542 8.89343L5.24925 17.9984L14.3542 27.1034"  stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M30.749 17.9988H5.50402"  stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
 </symbol>
 <symbol id="icon-arrow-right" viewBox="0 0 24 24">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 17" fill="none">
-  <path d="M9.62012 4.45312L13.6668 8.49979L9.62012 12.5465" stroke="#173D33" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M2.33325 8.5H13.5533" stroke="#173D33" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</symbol>
-<symbol id='icon-arrow-left' viewBox="0 0 24 24">
 <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 36 36" fill="none">
-  <path d="M14.3542 8.89343L5.24925 17.9984L14.3542 27.1034" stroke="#173D33" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M30.749 17.9988H5.50402" stroke="#173D33" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M21.6458 8.89343L30.7508 17.9984L21.6458 27.1034"  stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M5.25098 17.9988H30.496" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
-</symbol>
-<symbol id="icon-arrow-right-up" viewBox="0 0 32 32">
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.7143" d="M12.569 7.985h11.446v11.446"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.7143" d="M7.987 24.012l15.868-15.867"></path>
 </symbol>
 <symbol id="icon-call" viewBox="0 0 32 32">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
@@ -63,8 +61,8 @@
 </symbol>
 <symbol id="icon-facebook" viewBox="0 0 32 32">
 <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none">
-  <path d="M14 9.3V12.2H16.6C16.8 12.2 16.9 12.4 16.9 12.6L16.5 14.5C16.5 14.6 16.3 14.7 16.2 14.7H14V22H11V14.8H9.3C9.1 14.8 9 14.7 9 14.5V12.6C9 12.4 9.1 12.3 9.3 12.3H11V9C11 7.3 12.3 6 14 6H16.7C16.9 6 17 6.1 17 6.3V8.7C17 8.9 16.9 9 16.7 9H14.3C14.1 9 14 9.1 14 9.3Z" fill="#173D33"/>
-  <path d="M15 22H9C4 22 2 20 2 15V9C2 4 4 2 9 2H15C20 2 22 4 22 9V15C22 20 20 22 15 22Z" stroke="#173D33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M14 9.3V12.2H16.6C16.8 12.2 16.9 12.4 16.9 12.6L16.5 14.5C16.5 14.6 16.3 14.7 16.2 14.7H14V22H11V14.8H9.3C9.1 14.8 9 14.7 9 14.5V12.6C9 12.4 9.1 12.3 9.3 12.3H11V9C11 7.3 12.3 6 14 6H16.7C16.9 6 17 6.1 17 6.3V8.7C17 8.9 16.9 9 16.7 9H14.3C14.1 9 14 9.1 14 9.3Z"/>
+  <path d="M15 22H9C4 22 2 20 2 15V9C2 4 4 2 9 2H15C20 2 22 4 22 9V15C22 20 20 22 15 22Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </symbol>
 <symbol id="icon-global-edit" viewBox="0 0 32 32">
@@ -81,9 +79,9 @@
 </symbol>
 <symbol id="icon-instagram" viewBox="0 0 32 32">
 <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none">
-  <path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="#173D33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M12 15.5C13.933 15.5 15.5 13.933 15.5 12C15.5 10.067 13.933 8.5 12 8.5C10.067 8.5 8.5 10.067 8.5 12C8.5 13.933 10.067 15.5 12 15.5Z" stroke="#173D33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M17.6361 7H17.6477" stroke="#173D33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M12 15.5C13.933 15.5 15.5 13.933 15.5 12C15.5 10.067 13.933 8.5 12 8.5C10.067 8.5 8.5 10.067 8.5 12C8.5 13.933 10.067 15.5 12 15.5Z"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M17.6361 7H17.6477" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </symbol>
 <symbol id="icon-map" viewBox="0 0 32 32">

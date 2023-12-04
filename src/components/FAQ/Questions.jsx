@@ -21,8 +21,16 @@ const Questions = () => {
   const toggleQuestion = (index) => {
     setOpenIndex((prevIndex) => (prevIndex === index ? null : index));
   };
+
+  const scrollToContacts = () => {
+    const contactsSection = document.getElementById("contacts");
+    if (contactsSection) {
+      contactsSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <section>
+    <section id="questions">
       <FqaContainer>
         <FqaTitle>
           <Title title="Frequently Asked Questions" />
@@ -48,7 +56,7 @@ const Questions = () => {
         </FqaList>
         <FqaBox>
           <FqaText>Didn't find the answer to your question?</FqaText>
-          <Button title="Contact Us" />
+          <Button title="Contact Us" onClick={scrollToContacts} />
         </FqaBox>
       </FqaContainer>
     </section>

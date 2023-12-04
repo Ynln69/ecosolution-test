@@ -92,6 +92,7 @@ export const MainBox = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 8px;
+  margin-bottom: 36px;
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;

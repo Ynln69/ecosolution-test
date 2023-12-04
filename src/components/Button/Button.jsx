@@ -1,9 +1,9 @@
 import sprite from "../../images/sprite.svg";
 import { Btn } from "./Button.styled";
 
-const Button = ({ title }) => {
+const Button = ({ title, onClick }) => {
   return (
-    <Btn>
+    <Btn onClick={onClick}>
       {title}
       <svg width={16} height={16}>
         <use xlinkHref={`${sprite}#icon-circleArrow`}></use>

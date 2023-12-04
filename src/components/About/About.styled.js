@@ -72,33 +72,57 @@ export const ValuesItem = styled.li`
   padding: 12px;
 
   background: #eaedf1;
-  > h3 {
-    display: inline-block;
-    margin-left: 8px;
-    margin-bottom: 30px;
-
-    color: #173d33;
-    font-family: Oswald;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    text-transform: uppercase;
+  &.image-item {
+    height: auto;
+    padding: 0;
+    background: none;
   }
-  > p {
-    width: 124px;
+  @media (min-width: 1280px) {
+    padding: 24px;
+  }
+`;
 
-    color: #173d33;
-    text-align: justify;
-    font-family: Fira Sans;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: -0.56px;
-    &::before {
-      display: block;
-      content: "";
-      background: #97d28b;
-      height: 1px;
-      margin-bottom: 12px;
+export const ItemTitle = styled.h3`
+  display: inline-block;
+  margin-left: 8px;
+  margin-bottom: 30px;
+
+  color: #173d33;
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  @media (min-width: 768px) {
+    margin-bottom: 51px;
+  }
+  @media (min-width: 1280px) {
+    margin-bottom: 94px;
+  }
+`;
+
+export const ItemText = styled.p`
+  width: 124px;
+  color: #173d33;
+  text-align: justify;
+  font-family: Fira Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.56px;
+  &::before {
+    display: block;
+    content: "";
+    background: #97d28b;
+    height: 1px;
+    margin-bottom: 12px;
+  }
+  @media (min-width: 480px) {
+  }
+  @media (min-width: 768px) {
+    width: 135px;
+  }
+  @media (min-width: 1280px) {
+    width: 205px;
   }
 `;

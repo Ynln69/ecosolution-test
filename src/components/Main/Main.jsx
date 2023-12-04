@@ -1,4 +1,9 @@
 import useWindowSize from "hooks/useWindowSize";
+import SecondaryBtn from "components/SecondaryBtn/SecondaryBtn";
+
+import WindTurbineSmall from "../../images/mobile/wind-turbine360.jpg";
+import WindTurbineMedium from "../../images/tablet/wind-turbine768.jpg";
+import WindTurbineLarge from "../../images/wind-turbine1280.jpg";
 import {
   MainSection,
   MainContainer,
@@ -8,13 +13,18 @@ import {
   MainBox,
 } from "./Main.styled";
 
-import SecondaryBtn from "components/SecondaryBtn/SecondaryBtn";
-
 const Main = () => {
   const { width } = useWindowSize();
-  const basePath = "../../images/";
+
+  const scrollToContacts = () => {
+    const contactsSection = document.getElementById("cases");
+    if (contactsSection) {
+      contactsSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <MainSection>
+    <MainSection id="main">
       <MainContainer>
         <Title>Renewable energy for any task</Title>
         <TextContainer>
@@ -23,7 +33,7 @@ const Main = () => {
             sources, generating power generation using energy wind, sun, water,
             biomass
           </Text>
-          <SecondaryBtn title="Learn more" />
+          <SecondaryBtn title="Learn more" onClick={scrollToContacts} />
         </TextContainer>
       </MainContainer>
       <MainBox>
@@ -32,14 +42,17 @@ const Main = () => {
         {width >= 768 && <p>ecosolution © 2023</p>}
       </MainBox>
       <img
-        alt=""
-        srcSet={`${basePath}mobile/wind-turbine360.jpg 360w,
-        ${basePath}tablet/wind-turbine768.jpg 768w,
-        ${basePath}wind-turbine1280.jpg 1280w`}
-        sizes="(max-width: 320px) 280px,
-        (max-width: 480px) 440px,
-        800px"
-        src="../../images/wind-turbine1280.jpg"
+        srcSet={`
+          ${WindTurbineSmall} 480w,
+          ${WindTurbineMedium} 800w,
+          ${WindTurbineLarge} 1200w
+        `}
+        sizes="(max-width: 480px) 100vw,
+        (max-width: 768px) 80vw,
+        (max-width: 1280px) 60vw,
+        1200px"
+        src={WindTurbineSmall}
+        alt="Wind Turbine"
       />
     </MainSection>
   );

@@ -10,7 +10,7 @@ import {
 
 const Cases = () => {
   return (
-    <section>
+    <section id="cases">
       <CasesContent>
         <CasesTitle>Successful cases of our company</CasesTitle>
         <CasesBox>

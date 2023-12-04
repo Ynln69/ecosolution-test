@@ -13,6 +13,7 @@ export const SecondaryButton = styled.button`
 
   background-color: transparent;
   color: #173d33;
+  stroke: #173d33;
   font-family: Fira Sans;
   font-size: 16px;
   font-weight: 400;

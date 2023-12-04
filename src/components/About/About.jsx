@@ -1,15 +1,24 @@
+import useWindowSize from "hooks/useWindowSize";
 import {
   ValuesContent,
   ValuesText,
   ValuesList,
   ValuesItem,
+  ItemTitle,
+  ItemText,
 } from "./About.styled";
+import SolarPanelsMedium from "../../images/tablet/solar-panels768.jpg";
+import SolarPanelsLarge from "../../images/solar-panels1280.jpg";
+import WindFarmsMedium from "../../images/tablet/wind-farms-fields768.jpg";
+import WindFarmsLarge from "../../images/wind-farms-fields1280.jpg";
+
 import sprite from "../../images/sprite.svg";
 import Title from "components/Title/Title";
 
 const About = () => {
+  const { width } = useWindowSize();
   return (
-    <section>
+    <section id="about">
       <ValuesContent>
         <Title title="Main values of our company" />
         <ValuesText>
@@ -25,37 +34,72 @@ const About = () => {
           <svg width={16} height={16}>
             <use xlinkHref={`${sprite}#icon-maximize-circle`}></use>
           </svg>
-          <h3> Openness</h3>
-          <p>to the world, people, new ideas and projects</p>
+          <ItemTitle> Openness</ItemTitle>
+          <ItemText>to the world, people, new ideas and projects</ItemText>
         </ValuesItem>
         <ValuesItem>
           <svg width={16} height={16}>
             <use xlinkHref={`${sprite}#icon-global-edit`}></use>
           </svg>
-          <h3> Responsibility</h3>
-          <p>
+          <ItemTitle> Responsibility</ItemTitle>
+          <ItemText>
             we are aware that the results of our work have an impact on our
             lives and the lives of future generations
-          </p>
+          </ItemText>
         </ValuesItem>
+        {width >= 768 && (
+          <ValuesItem className="image-item">
+            <img
+              img
+              srcSet={`
+          ${SolarPanelsMedium} 768w,
+          ${SolarPanelsLarge} 1280w
+        `}
+              sizes="
+        (max-width: 768px) 80vw,
+        (max-width: 1280px) 60vw,
+        1200px"
+              src={SolarPanelsMedium}
+              alt="Wind Turbine"
+            />
+          </ValuesItem>
+        )}
+        {width >= 768 && (
+          <ValuesItem className="image-item">
+            <img
+              img
+              srcSet={`
+          ${WindFarmsMedium} 768w,
+          ${WindFarmsLarge} 1280w
+        `}
+              sizes="
+        (max-width: 768px) 80vw,
+        (max-width: 1280px) 60vw,
+        1200px"
+              src={WindFarmsMedium}
+              alt="Wind Turbine"
+            />
+          </ValuesItem>
+        )}
+
         <ValuesItem>
           <svg width={16} height={16}>
             <use xlinkHref={`${sprite}#icon-cpu-charge`}></use>
           </svg>
-          <h3> Innovation</h3>
-          <p>
+          <ItemTitle> Innovation</ItemTitle>
+          <ItemText>
             we use the latest technology to implement non-standard solutions
-          </p>
+          </ItemText>
         </ValuesItem>
         <ValuesItem>
           <svg width={16} height={16}>
             <use xlinkHref={`${sprite}#icon-ranking`}></use>
           </svg>
-          <h3> Quality</h3>
-          <p>
+          <ItemTitle> Quality</ItemTitle>
+          <ItemText>
             we do not strive to be the first among others, but we want to be the
             best in our business
-          </p>
+          </ItemText>
         </ValuesItem>
       </ValuesList>
     </section>

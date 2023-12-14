@@ -1,42 +1,61 @@
 import styled from "@emotion/styled";
 
 export const FooterSection = styled.footer`
-  position: relative;
-  margin-bottom: 24px;
+  padding-top: 18px;
+  padding-bottom: 24px;
   &::before {
     display: block;
     content: "";
-    background: #97d28b;
+    width: 100%;
     height: 1px;
     margin-bottom: 24px;
+
+    background: #97d28b;
     @media (min-width: 768px) {
+      width: 708px;
       margin-bottom: 40px;
+      margin-left: auto;
+      margin-right: auto;
     }
-  }
-  @media (min-width: 768px) {
-    margin-bottom: 40px;
+    @media (min-width: 1280px) {
+      width: 1080px;
+    }
   }
 `;
 
 export const FooterContent = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 24px;
+  margin-bottom: 24px;
+
   @media (min-width: 768px) {
-    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    gap: 87px;
+    margin-bottom: 16px;
+  }
+  @media (min-width: 1280px) {
+    gap: 270px;
   }
 `;
 
 export const ButtonUp = styled.button`
+  position: absolute;
+  right: 0;
+  top: 7px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 8px;
   border-radius: 100px;
   border: none;
-  stroke: #173d33;
-  transform: rotate(270deg);
+
   background: #97d28b;
+  stroke: #173d33;
+
+  transform: rotate(270deg);
 `;
 
 export const SocialList = styled.ul`

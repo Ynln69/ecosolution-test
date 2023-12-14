@@ -1,9 +1,13 @@
 import styled from "@emotion/styled";
 
-export const HeaderContainer = styled.header`
-  display: flex;
-  justify-content: space-between;
+export const HeaderSection = styled.header`
   padding-top: 36px;
+`;
+
+export const HeaderContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 export const BtnBox = styled.div`

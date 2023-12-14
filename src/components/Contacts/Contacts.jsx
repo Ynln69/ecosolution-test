@@ -1,16 +1,20 @@
-import { ContactsTitle, ContactContainer } from "./Contacts.styled";
 import ContactsForm from "./ContactsForm";
 import ContactsList from "./ContactsList";
 
+import { Section, Container } from "css/base.styled";
+import { ContactsTitle, ContactContainer } from "./Contacts.styled";
+
 const Contacts = () => {
   return (
-    <section id="contacts">
-      <ContactsTitle>Contact us</ContactsTitle>
-      <ContactContainer>
-        <ContactsList />
-        <ContactsForm />
-      </ContactContainer>
-    </section>
+    <Section id="contacts">
+      <Container>
+        <ContactsTitle>Contact us</ContactsTitle>
+        <ContactContainer>
+          <ContactsList />
+          <ContactsForm />
+        </ContactContainer>
+      </Container>
+    </Section>
   );
 };
 

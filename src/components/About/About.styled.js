@@ -1,15 +1,5 @@
 import styled from "@emotion/styled";
 
-// export const Values = styled.section`
-//   padding: 36px 0;
-
-//   @media (min-width: 768px) {
-//     padding: 100px 0;
-//   }
-//   @media (min-width: 1280px) {
-//     padding: 120px 0;
-//   }
-// `;
 export const ValuesContent = styled.div`
     display: flex;
     flex-direction: column;

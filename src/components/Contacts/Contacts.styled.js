@@ -3,10 +3,13 @@ import { SecondaryButton } from "components/SecondaryBtn/SecondaryBtn.styled";
 import { MainTitle } from "components/Title/Title.stylde";
 
 export const ContactsTitle = styled(MainTitle)`
-  width: 168px;
   margin: 0 auto;
   margin-bottom: 24px;
+  @media (min-width: 480px) {
+    width: 131px;
+  }
   @media (min-width: 768px) {
+    width: 168px;
     margin-bottom: 40px;
   }
   @media (min-width: 1280px) {
@@ -77,7 +80,8 @@ export const ContactsDesc = styled.span`
 // FORM STYLE
 
 export const ContactForm = styled.form`
-  width: 320px;
+  position: relative;
+  width: 296px;
   display: flex;
   flex-direction: column;
   gap: 28px;
@@ -85,11 +89,11 @@ export const ContactForm = styled.form`
 
   background: #eaedf1;
   @media (min-width: 768px) {
-    width: 342px;
+    width: 294px;
     padding: 36px 24px;
   }
   @media (min-width: 1280px) {
-    width: 596px;
+    width: 500px;
     padding: 48px;
   }
 `;

@@ -1,33 +1,6 @@
 body {
   margin: 0;
-  padding: 0 20px;
-
   background-color: #f3f5fa;
-}
-
-section {
-  margin: 0 auto;
-  padding-top: 18px;
-  padding-bottom: 18px;
-}
-
-@media (min-width: 768px) {
-  body {
-    padding: 0 30px;
-  }
-  section {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-}
-@media (min-width: 1280px) {
-  body {
-    padding: 0 100px;
-  }
-  section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
 }
 
 h1,

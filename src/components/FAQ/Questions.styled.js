@@ -22,8 +22,10 @@ export const FqaList = styled.ul`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 36px;
   @media (min-width: 768px) {
     align-items: flex-start;
+    margin-bottom: 0;
   }
 `;
 export const FqaItem = styled.li`

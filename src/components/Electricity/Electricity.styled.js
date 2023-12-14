@@ -3,7 +3,6 @@ import { MainTitle } from "components/Title/Title.stylde";
 
 export const ElectricityTitle = styled(MainTitle)`
   margin: 0 auto;
-  text-align: center;
   @media (min-width: 1280px) {
     width: 491px;
   }

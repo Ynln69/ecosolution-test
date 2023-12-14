@@ -1,7 +1,14 @@
 import styled from "@emotion/styled";
+import { Section } from "css/base.styled";
 
-export const MainSection = styled.section`
+export const MainSection = styled(Section)`
   padding-top: 146px;
+  @media (min-width: 768px) {
+    padding-top: 164px;
+  }
+  @media (min-width: 1280px) {
+    padding-top: 200px;
+  }
 `;
 
 export const MainContainer = styled.div`

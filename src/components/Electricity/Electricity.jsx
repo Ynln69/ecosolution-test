@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 import {
   ElectricityContent,
@@ -6,6 +6,7 @@ import {
   ElectricitySpan,
   ElectricityTitle,
 } from "./Electricity.styled";
+import { Container, Section } from "css/base.styled";
 
 const Electricity = () => {
   const [counter, setCounter] = useState(1134147814);
@@ -17,13 +18,17 @@ const Electricity = () => {
     return () => clearInterval(intervalId);
   }, []);
   return (
-    <section>
-      <ElectricityTitle>Electricity we produced for all time</ElectricityTitle>
-      <ElectricityContent>
-        <ElectricityCounter>{counter.toLocaleString()}</ElectricityCounter>
-        <ElectricitySpan>kWh</ElectricitySpan>
-      </ElectricityContent>
-    </section>
+    <Section>
+      <Container>
+        <ElectricityTitle>
+          Electricity we produced for all time
+        </ElectricityTitle>
+        <ElectricityContent>
+          <ElectricityCounter>{counter.toLocaleString()}</ElectricityCounter>
+          <ElectricitySpan>kWh</ElectricitySpan>
+        </ElectricityContent>
+      </Container>
+    </Section>
   );
 };
 

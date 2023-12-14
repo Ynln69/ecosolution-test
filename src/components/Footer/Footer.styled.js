@@ -6,16 +6,19 @@ export const FooterSection = styled.footer`
   &::before {
     display: block;
     content: "";
-    width: 100%;
+    width: 320px;
     height: 1px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 24px;
 
     background: #97d28b;
+    @media (min-width: 480px) {
+      width: 440px;
+    }
     @media (min-width: 768px) {
       width: 708px;
       margin-bottom: 40px;
-      margin-left: auto;
-      margin-right: auto;
     }
     @media (min-width: 1280px) {
       width: 1080px;

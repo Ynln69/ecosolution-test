@@ -10,6 +10,7 @@ import {
   FqaItem,
   FqaList,
   FqaTitle,
+  ItemThumb,
   ItemButton,
   ItemTitle,
   ItemText,
@@ -19,7 +20,7 @@ import {
 import sprite from "../../images/sprite.svg";
 
 const Questions = () => {
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState(0);
 
   const toggleQuestion = (index) => {
     setOpenIndex((prevIndex) => (prevIndex === index ? null : index));
@@ -42,21 +43,23 @@ const Questions = () => {
           <FqaList>
             {initialQuestions.map((question, index) => (
               <FqaItem key={index}>
-                <ItemButton onClick={() => toggleQuestion(index)}>
-                  <svg>
-                    <use
-                      xlinkHref={`${sprite}#${
-                        openIndex === index ? "icon-minus" : "icon-plus"
-                      }`}
-                    ></use>
-                  </svg>
-                </ItemButton>
-                <div>
-                  <ItemTitle>{question.title}</ItemTitle>
-                  {openIndex === index && (
-                    <ItemText>{question.answer}</ItemText>
-                  )}
-                </div>
+                <ItemThumb onClick={() => toggleQuestion(index)}>
+                  <ItemButton>
+                    <svg>
+                      <use
+                        xlinkHref={`${sprite}#${
+                          openIndex === index ? "icon-minus" : "icon-plus"
+                        }`}
+                      ></use>
+                    </svg>
+                  </ItemButton>
+                  <div>
+                    <ItemTitle>{question.title}</ItemTitle>
+                    {openIndex === index && (
+                      <ItemText>{question.answer}</ItemText>
+                    )}
+                  </div>
+                </ItemThumb>
               </FqaItem>
             ))}
           </FqaList>

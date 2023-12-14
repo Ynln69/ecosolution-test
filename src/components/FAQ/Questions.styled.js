@@ -30,9 +30,6 @@ export const FqaList = styled.ul`
 `;
 export const FqaItem = styled.li`
   position: relative;
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
   &::before {
     display: block;
     content: "";
@@ -53,6 +50,13 @@ export const FqaItem = styled.li`
     width: 596px;
   }
 `;
+
+export const ItemThumb = styled.div`
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+`;
+
 export const ItemButton = styled.button`
   background: transparent;
   border: none;

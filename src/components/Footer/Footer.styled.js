@@ -60,13 +60,3 @@ export const ButtonUp = styled.button`
 
   transform: rotate(270deg);
 `;
-
-export const SocialList = styled.ul`
-  display: flex;
-  gap: 8px;
-  justify-content: center;
-`;
-
-export const SocialSvg = styled.svg`
-  stroke: #173d33;
-`;

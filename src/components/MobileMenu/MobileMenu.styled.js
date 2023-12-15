@@ -16,11 +16,11 @@ export const Backdrop = styled.div`
 `;
 
 export const MobMenu = styled.div`
-  width: 280px;
+  width: 320px;
   height: 701px;
-  margin: 0 auto;
   padding: 24px;
   border-radius: 25px;
+
   background: rgba(23, 61, 51, 0.75);
   backdrop-filter: blur(12.5px);
   @media (min-width: 768px) {
@@ -44,6 +44,7 @@ export const BtnMobile = styled.button`
 
   background: transparent;
   color: #fff;
+  stroke: #fff;
   font-family: Fira Sans;
   font-size: 20px;
   font-weight: 400;
@@ -52,12 +53,26 @@ export const BtnMobile = styled.button`
   &::after {
     display: block;
     content: "";
-    width: 272px;
-    background: #97d28b;
+    width: 308px;
+    background: #fff;
     height: 1px;
     bottom: -8px;
     position: absolute;
   }
+  &:hover {
+    color: #97d28b;
+    svg {
+      stroke: #97d28b;
+    }
+  }
+`;
+
+export const ThumbLists = styled.div`
+  height: 681px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
 `;
 
 export const NavList = styled.ul`
@@ -92,16 +107,4 @@ export const NavLink = styled.a`
 export const NavSvg = styled.svg`
   stroke: white;
   transform: rotate(314deg);
-`;
-
-export const SocialList = styled.ul`
-  position: absolute;
-  bottom: 24px;
-  display: flex;
-  gap: 8px;
-`;
-
-export const SocialSvg = styled.svg`
-  stroke: white;
-  fill: white;
 `;

@@ -5,14 +5,22 @@ const SocialList = ({ socialSvgColor }) => {
   return (
     <List>
       <li>
-        <a href="https://www.facebook.com">
+        <a
+          href="https://www.facebook.com"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+        >
           <SocialSvg width={24} height={24} stroke={socialSvgColor}>
             <use xlinkHref={`${sprite}#icon-facebook`}></use>
           </SocialSvg>
         </a>
       </li>
       <li>
-        <a href="https://www.instagram.com/">
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+        >
           <SocialSvg width={24} height={24} stroke={socialSvgColor}>
             <use xlinkHref={`${sprite}#icon-instagram`}></use>
           </SocialSvg>

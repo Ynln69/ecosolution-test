@@ -18,11 +18,20 @@ import {
 const MobileMenu = ({ onClose }) => {
   const socialSvgColor = "#fff";
   useEffect(() => {
+    const handelKeyDown = (e) => {
+      if (e.code === "Escape") {
+        onClose();
+      }
+    };
+
     document.body.style.overflow = "hidden";
+    document.addEventListener("keydown", handelKeyDown);
+
     return () => {
       document.body.style.overflow = "visible";
+      document.removeEventListener("keydown", handelKeyDown);
     };
-  }, []);
+  }, [onClose]);
 
   const handleLinkClick = (sectionId) => {
     onClose(sectionId);
